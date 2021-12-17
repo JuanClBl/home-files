@@ -1,0 +1,19 @@
+With NVIDIA drivers, do not use xorg.conf file nor nvidia-xsettings to create it.
+
+Avoid wrapping lines in Thunderbird setting mailnews.wraplength option to 0.
+
+If validity check fails when installing/updating with yay, it should be a package maintaining error. Report and try later to uninstall, delete cache with yay -Sc, and install again.
+
+If error with yay: "error while loading shared libraries: libalpm.so.11: cannot open shared object file: No such file or directory", update yay and reinstall: git pull and makepkg -sirc.
+
+# AutoFirma only works with Java 8: use archlinux-java set java-8-openjdk/jre.
+
+When changing password in Google, delete ~/.gdfuse/default/state to ask for credentials at next log in attempt.
+
+If xinit does not start (and startx in tty2 gives "no screens found" error), NVIDIA drives must have been updated. Update initramfs with sudo mkinitcpio -P.
+
+Change Xcompmgr background colour with 'hsetroot -solid "#000000"'.
+
+For using DNIe in Firefox, plug the card reader with the card, go to Settings -> Security -> Certificates -> Security Devices, load and add '/usr/lib/opensc-pkcs11.so' file. Then, log in.
+
+For configuring AutoFirma for new DNIs: install packages for DNIe reading (pcsc-tools, ccid, opensc, lbpkcs11-dnie, ca-certificates-dnie), enable and start pcscd.service, delete non-used Firefox profiles (about:profiles), open AutoFirma, press "Usar cualquier certificado", go to preferences (Ctrl+P), uncheck "Habilitar JMulticard...", accept, close, and choose always "Usar cualquier certificado" when opening the software". Select file and, when pressing "Firmar", DNI certificates should be listed and ready to choose.

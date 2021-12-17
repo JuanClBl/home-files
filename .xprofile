@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Composite manager
+xcompmgr -c &
+hsetroot -solid "#222e45"
+
+# Notification server
+dunst &
+
+# Wallpaper
+feh --bg-fill "https://unsplash.it/1920/1080/?landscape" &
+
+# Status bar
+clockemoji &
+meteo &
+statusbar &
+sudo checkyayupdates &
+
+# System tray
+birdtray &
+#discord-ptb --start-minimized &
+#skypeforlinux &
+
+# Google Drive
+google-drive-ocamlfuse /home/juan/'Google Drive'/ &
+
+exec dwm
+

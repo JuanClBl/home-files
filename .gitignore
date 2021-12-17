@@ -1,0 +1,8 @@
+*
+
+!.gitignore
+!p10k.zsk
+!/.vars/emojis
+!.profile
+!.xprofile
+!.zshrc
