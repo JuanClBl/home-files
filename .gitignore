@@ -1,7 +1,7 @@
 *
 
 !.gitignore
-!p10k.zsk
+!p10k.zsh
 !Tricks
 !/.vars/emojis
 !.profile
