@@ -2,6 +2,7 @@
 
 !.gitignore
 !p10k.zsk
+!Tricks
 !/.vars/emojis
 !.profile
 !.xprofile
