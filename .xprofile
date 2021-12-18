@@ -8,7 +8,7 @@ hsetroot -solid "#222e45"
 dunst &
 
 # Wallpaper
-feh --bg-fill "https://unsplash.it/1920/1080/?landscape" &
+(ping -c 1 -W 0.1 google.com; while [[ $? -ne 0 ]]; do ping -c 1 -W 0.1 google.com; done; feh --bg-fill "https://unsplash.it/1920/1080/?landscape") &
 
 # Status bar
 clockemoji &
