@@ -17,3 +17,5 @@ Change Xcompmgr background colour with 'hsetroot -solid "#000000"'.
 For using DNIe in Firefox, plug the card reader with the card, go to Settings -> Security -> Certificates -> Security Devices, load and add '/usr/lib/opensc-pkcs11.so' file. Then, log in.
 
 For configuring AutoFirma for new DNIs: install packages for DNIe reading (pcsc-tools, ccid, opensc, lbpkcs11-dnie, ca-certificates-dnie), enable and start pcscd.service, delete non-used Firefox profiles (about:profiles), open AutoFirma, press "Usar cualquier certificado", go to preferences (Ctrl+P), uncheck "Habilitar JMulticard...", accept, close, and choose always "Usar cualquier certificado" when opening the software". Select file and, when pressing "Firmar", inserted DNI certificates should be listed and ready to choose.
+
+If MP3Diags gives some error and does not open: recompile. Use "makepkg -o" if neccessary to extract source and tweak it based on any possible compiling error. Install with "makepkg -sirce". "-e" option for using already extracted (and tweaked) source.
