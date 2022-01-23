@@ -21,8 +21,5 @@ birdtray &
 #discord-ptb --start-minimized &
 #skypeforlinux &
 
-# Google Drive
-google-drive-ocamlfuse /home/juan/'Google Drive'/ &
-
 exec dwm
 
