@@ -21,3 +21,5 @@ For configuring AutoFirma for new DNIs: install packages for DNIe reading (pcsc-
 If MP3Diags gives some error and does not open: recompile. Use "makepkg -o" if neccessary to extract source and tweak it based on any possible compiling error. Install with "makepkg -sirce". "-e" option for using already extracted (and tweaked) source.
 
 For merging in Git with another remote repo: "git remote add repo_name repo_URL" if not added yet, "git pull repo_name branch_name". If reconciliation method is to be specified, "git pull repo_name branch_name" will need to be run again. Solve conflicts and "git commit -am commit_message".
+
+To create "compile_commands.json" for linking headers while linting, use bear (sudo before if compilation requires) and compdb (in $HOME/.local/bin).
