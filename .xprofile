@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Composite manager
-xcompmgr -c &
+picom -b --backend glx
 hsetroot -solid "#222e45"
 
 # Notification server

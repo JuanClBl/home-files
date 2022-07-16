@@ -20,6 +20,7 @@ let g:airline_powerline_fonts = 1
 let g:indentLine_char = '│'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
+let g:c_syntax_for_h = 1
 
 highlight GitGutterAdd ctermfg=2
 highlight GitGutterChange ctermfg=3

@@ -25,3 +25,5 @@ For merging in Git with another remote repo: "git remote add repo_name repo_URL"
 To create "compile_commands.json" for linking headers while linting, use bear (sudo before if compilation requires) and compdb (in $HOME/.local/bin).
 
 To set static DNS servers, write "[global-dns-domain-*]" and "servers=8.8.8.8,8.8.4.4" below in "/etc/NetworkManager/NetworkManager.conf". This seems to prevent NetworkManager from requesting DNS servers.
+
+Run GeoGebra with java 11 and "_JAVA_AWT_WM_NONREPARENTING=1 geogebra"
