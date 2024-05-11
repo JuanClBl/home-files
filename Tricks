@@ -10,7 +10,7 @@ If error with yay: "error while loading shared libraries: libalpm.so.11: cannot 
 
 When changing password in Google, delete ~/.gdfuse/default/state to ask for credentials at next log in attempt.
 
-If xinit does not start (and startx in tty2 gives "no screens found" error), NVIDIA drives must have been updated. Update initramfs with sudo mkinitcpio -P.
+If xinit does not start (and startx in tty2 gives "no screens found" error), NVIDIA drives must have been updated. Update initramfs with sudo mkinitcpio -P. If it still fails, a patch for the driver may be needed. Check AUR page of the nvidia package.
 
 Change Xcompmgr background colour with 'hsetroot -solid "#000000"'.
 
